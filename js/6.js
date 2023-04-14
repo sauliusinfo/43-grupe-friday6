@@ -8,14 +8,14 @@ Rasti geriausiai besimokantį ir blogiausiai.
 let pazymiai=[];
 
 for (let i=0; i<30; i++) {
-  pazymiai.push(Math.floor(Math.random() * 10) + 1);
+  pazymiai.push( Math.floor(Math.random() * 10) +1);
 }
 console.log(pazymiai);
 
 let geriauBesimokantys=0, blogiauBesimokantys=0;
-for (let mok=0; mok<=pazymiai.length; mok++) {
+for (let mok=0; mok<pazymiai.length; mok++) {
     // console.log(pazymiai[mok]);
-    if (pazymiai[mok] >= 7) {
+    if (pazymiai[mok] > 6) {
         geriauBesimokantys++;
     } else {
         blogiauBesimokantys++;
