@@ -8,8 +8,9 @@ Viso monetų N skaičius“.
 
 const monetos=[5, 2, 1]; // monetu nominalai
 const skMonetos=[0, 0, 0] // pradinis monetų sk.
-let n=0; // suma kueria reikia iskeisti
-let N=0; // monetu kiekis;
+
+let N=0; // monetu kiekis kuri norime iskeisti;
+let n=0; // suma kuria reikia iskeisti
 
 function keitykla(n) {
     
@@ -31,4 +32,4 @@ function keitykla(n) {
     return N;
 }
 
-console.log(keitykla(100));
+console.log(keitykla(38));
