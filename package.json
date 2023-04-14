@@ -1,0 +1,22 @@
+{
+  "name": "43-grupe-friday6",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "7": "nodemon ./js/7.js",
+    "6": "nodemon ./js/6.js",
+    "5": "nodemon ./js/5.js",
+    "4": "nodemon ./js/4.js",
+    "3": "nodemon ./js/3.js",
+    "2": "nodemon ./js/2.js",
+    "1": "nodemon ./js/1.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sauliusinfo (https://github.com/sauliusinfo)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
