@@ -6,13 +6,9 @@ Atsakymo galimas pvz: „Norint gauti n sumą litais, mums reikės n1 monetų po
 Viso monetų N skaičius“.
 `);
 
-const monetos=[5, 2, 1]; // monetu nominalai
-const skMonetos=[0, 0, 0] // pradinis monetų sk.
-
-let N=0; // monetu kiekis kuri norime iskeisti;
-let n=0; // suma kuria reikia iskeisti
-
 function keitykla(n) {
+    const monetos=[5, 2, 1]; // monetu nominalai
+    let skMonetos=[0, 0, 0] // pradinis monetų sk.
     
     for (let i=0; i<monetos.length; i++) {
         while (n >= monetos[i]) {
@@ -24,12 +20,12 @@ function keitykla(n) {
     let N = "Norint gauti " + n + " sumą litais, mums reikės ";
     for (let i = 0; i < monetos.length; i++) {
         if (skMonetos[i] > 0) {
-            N += skMonetos[i] + " monetų po " + monetos[i] + " litą/-us, ";
+            N += skMonetos[i] + " monetų/os po " + monetos[i] + "lt, ";
         }
     }
     N += "viso monetų " + skMonetos.reduce((a, b) => a + b);
     
-    return N;
+    return N + ' testui-' + n;
 }
 
 console.log(keitykla(38));
