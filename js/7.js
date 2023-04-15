@@ -25,7 +25,7 @@ function keitykla(n) {
     }
     N += "viso monetų " + skMonetos.reduce((a, b) => a + b);
     
-    return N + ' testui-' + n;
+    return N;
 }
 
 console.log(keitykla(38));
