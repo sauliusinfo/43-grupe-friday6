@@ -9,21 +9,24 @@ Viso monetų N skaičius“.
 function keitykla(n) {
     const monetos=[5, 2, 1]; // monetu nominalai
     let skMonetos=[0, 0, 0] // pradinis monetų sk.
-    
+    // console.log(n);
+    saveN=n;
+
     for (let i=0; i<monetos.length; i++) {
         while (n >= monetos[i]) {
             n -= monetos[i];
             skMonetos[i]++;
         }
     }
-    
-    let N = "Norint gauti " + n + " sumą litais, mums reikės ";
+    // console.log(n);
+
+    let N = "Norint gauti " + saveN + " sumą litais, mums reikės: ";
     for (let i = 0; i < monetos.length; i++) {
         if (skMonetos[i] > 0) {
             N += skMonetos[i] + " monetų/os po " + monetos[i] + "lt, ";
         }
     }
-    N += "viso monetų " + skMonetos.reduce((a, b) => a + b);
+    N += "viso monetų " + skMonetos.reduce((a, b) => a + b) + '.';
     
     return N;
 }
